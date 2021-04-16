@@ -15,11 +15,11 @@
         
         
        
-        <form>
+        <form id="myForm">
             <h2>Thong Tin Sach</h2>
             <div class="form-control">
                 <label name="tensach">Ten Sach</label>
-                <input type="text" id="sach">
+                <label for="sach"></label><input type="text" id="sach">
                 <small>khong hop le</small>
 
             </div>
@@ -31,12 +31,12 @@
             </div>
             <div class="form-control">
                 <label name="">So Luong</label>
-                <input type="text" id="soluong">
+                <input type="number" id="soluong">
                 <small>khong hop le</small>
             </div>
             <div class="form-control">
                 <label name="">Don Gia</label>
-                <input type="text" id="dongia">
+                <input type="number" id="dongia">
                 <small>khong hop le</small>
             </div>
             <div class="form-control">
@@ -54,15 +54,15 @@
 
 
                 <select id="quequan">
-                    <option value=""> Vui Lòng Chọn</option>
-                    <option value="">Sach thieu Nhi</option>
-                    <option value="">Sach Khoa Hoc Ki Thuat</option>
-                    <option value="">Sach Van Hoc</option>
-                    <option value="">Sach Lich Su</option>
-                    <option value="">Sach dia ly
-                    <option value="">Sach ngoai ngu</option>
-                    <option value="">Sach phap luat</option>
-                    <option value="">Sach khac</option>
+                    <option value="" disabled selected> Vui Lòng Chọn</option>
+                    <option value="Sach thieu Nhi">Sach thieu Nhi</option>
+                    <option value="Sach Khoa Hoc Ki Thuat">Sach Khoa Hoc Ki Thuat</option>
+                    <option value="Sach Van Hoc">Sach Van Hoc</option>
+                    <option value="Sach Lich Su">Sach Lich Su</option>
+                    <option value="Sach dia ly">Sach dia ly</option>
+                    <option value="Sach ngoai ngu">Sach ngoai ngu</option>
+                    <option value="Sach phap luat">Sach phap luat</option>
+                    <option value="Sach khac">Sach khac</option>
 
 
 
@@ -76,7 +76,7 @@
             </div>
             <div class="form-control">
                 <label>San Pham Dan Co</label>
-                <input type="checkbox" id="sp1"> Trong Kho
+                <input type="checkbox" id="sp1" checked> Trong Kho
                 <input type="checkbox" id="sp2"> Bay Ban
                 <input type="checkbox" id="sp3"> Chua Kiem Tra
 
@@ -86,23 +86,23 @@
 
             <div class="form-control">
                 <label name="">Noi Nhan Hang</label>
-                <input type="radio" name="noithanh" id="noithanh">Noi Thanh
-                <input type="radio" name="noithanh" id="ngoaithanh">Ngoai Thanh
+                <input type="radio" name="area" id="noithanh" value="noithanh">Noi Thanh
+                <input type="radio" name="area" id="ngoaithanh" value="ngoaithanh">Ngoai Thanh
 
 
                 <small>khong hop le</small>
             </div>
             <div class="form-control">
                 <label name="">Phi Van Chuyen</label>
-                <input type="text" name="phivanchuyen" id="phivanchuyen">
+                <input type="number" name="phivanchuyen" id="phivanchuyen">
                 <small>khong hop le</small>
 
 
 
 
             </div>
-            <button>Hien Thi Thong Tin</button>
-            <button>Xoa Thong Tin</button>
+            <button type="submit" id="btn-submit">Hien Thi Thong Tin</button>
+            <button id="btn-clear">Xoa Thong Tin</button>
 
 
 
@@ -111,7 +111,7 @@
     </div>
 
 
-
+<script src="validate.js"></script>
 </body>
 
 </html>
